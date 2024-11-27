@@ -191,7 +191,7 @@ def gcv_score(s, y, w_tot, n, nf, dcty, lamb, aow=None):
     """
     gamm = 1 / (1 + s * lamb ** 2)
 
-    if aow > 0.9:
+    if aow > 0.91:
         a = dcty * (gamm - 1)
         rss = np.sum(a ** 2)
     else:
