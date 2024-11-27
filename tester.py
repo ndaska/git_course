@@ -25,7 +25,8 @@ def test_plot(*args, **kwargs):
     for arg in args:
         ax.plot(arg, **kwargs)
         ax.plot(smoothn.smoothn(arg), **kwargs)
-
+    
+    print('hola')
     plt.show()
 
 
